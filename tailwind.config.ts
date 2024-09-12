@@ -18,12 +18,12 @@ const config: Config = {
         xl: "1280px", // Default 'xl' screen size
         "2xl": "1536px", // Default '2xl' screen size
       },
-	  backgroundImage:{
-		hero: "url('../assets/bg-image.jpg')",
-	  },
+      backgroundImage: {
+        hero: "url('../assets/bg-image.svg')",
+      },
       colors: {
-		heroColor:"#0060b9",
-		herodarkColor:"#193ebd",
+        heroColor: "#0060b9",
+        herodarkColor: "#193ebd",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -71,6 +71,28 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
     },
+    backgroundSize: {
+      auto: "auto",
+      cover: "cover",
+      contain: "contain",
+      "50%": "50%",
+      "16": "28rem",
+    },
+    backgroundPosition: {
+     'left-bottom-1': 'left 1rem bottom 1rem', 
+     bottom: 'bottom',
+     'bottom-4': 'center bottom 1rem',
+     center: 'center',
+     left: 'left',
+     'left-bottom': 'left bottom',
+     'left-top': 'left top',
+     right: 'right',
+     'right-bottom': 'right bottom',
+     'right-top': 'right top',
+     top: 'top',
+     'top-4': 'center top 1rem',
+
+    }
   },
   plugins: [require("tailwindcss-animate")],
 };
