@@ -19,6 +19,7 @@ export async function POST(req: NextRequest) {
         email,
       },
     });
+    
     if (!user) {
       throw new BadRequestError("Invalid email Id");
     }
