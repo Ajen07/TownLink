@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  postgres:
+    container_name: townLink-postgres
+    image: postgres:15-alpine
+    restart: always
+    ports:
+      - "5433:5433"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=townLink
+      - PGPORT=5433
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
+

@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section className="h-screen flex flex-col bg-gradient-to-b from-sky-300 dark:to-black to-white">
       <Navbar />
-      <article className="flex flex-col justify-center  bg-hero bg-16 bg-left-bottom-1 bg-no-repeat h-full">
+      <article className="flex flex-col justify-center  md:bg-hero bg-16 bg-left-bottom-1 bg-no-repeat h-full">
         <h1 className="bg-clip-text text-3xl lg:text-5xl text-transparent pb-4 bg-gradient-to-t from-heroColor to-herodarkColor  font-bold font-sans text-center">
           Boost Your Local Business with AI Support
         </h1>
