@@ -4,7 +4,7 @@ import NavigationItem from "./navigation-item";
 
 const AdminSidebar = () => {
   return (
-    <div className="space-y-4 flex flex-col items-center h-full text-primary w-full  bg-[#E3E5E8] py-3">
+    <div className="space-y-4 flex flex-col items-center h-full text-primary w-full  bg-blue-100 py-3">
       <div className="flex justify-center items-center gap-x-1">
         <h1 className="font-extrabold text-xl pt-1 text-heroColor">Dashboard</h1>
       </div>

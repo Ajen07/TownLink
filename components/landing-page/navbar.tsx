@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header className="md:flex mt-8  pl-8 justify-between pr-8 bg-transparent sticky">
+    <header className="md:flex mt-8  hidden pl-8 justify-between pr-8 bg-transparent sticky">
       <ul className="flex gap-8 text-lg font-serif justify-center items-center text-herodarkColor">
         <li>
           <Image src={logo} alt="logo" width={30} height={30} />
