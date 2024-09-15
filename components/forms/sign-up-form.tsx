@@ -4,28 +4,28 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import Link from "next/link";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 
-const SigninForm = () => {
+const SignupForm = () => {
   const [user, setUser] = useState({
+    name: "",
     email: "",
     password: "",
   });
   const [loading, setLoading] = useState(false);
   const router = useRouter();
-  const onLogin = async () => {
+  const onSignup = async () => {
     try {
       setLoading(true);
-      const response = await axios.post("/api/auth/sign-in", user);
-      console.log("Login success", response.data);
-      toast.success("Login success", { position: "top-right" });
+      const response = await axios.post("/api/auth/sign-up", user);
+      console.log("Signup success", response.data);
+      toast.success("Sign up success", { position: "top-right" });
       router.push("/dashboard");
     } catch (error: any) {
-      console.log("Login failed", error);
+      console.log("Sign up failed", error);
       toast.error(error?.response?.data?.error || "Something went wrong", {
         position: "top-right",
       });
@@ -35,6 +35,17 @@ const SigninForm = () => {
   };
   return (
     <div className="grid gap-4">
+      <div className="grid gap-2">
+        <Label htmlFor="email">Name</Label>
+        <Input
+          id="name"
+          type="text"
+          value={user.name}
+          onChange={(e) => setUser({ ...user, name: e.target.value })}
+          placeholder="John Doe"
+          required
+        />
+      </div>
       <div className="grid gap-2">
         <Label htmlFor="email">Email</Label>
         <Input
@@ -56,20 +67,17 @@ const SigninForm = () => {
           onChange={(e) => setUser({ ...user, password: e.target.value })}
         />
       </div>
-      <Link href="/forgot-password" className="inline-block text-sm underline">
-        Forgot your password?
-      </Link>
       <Button
         type="submit"
         variant="primaryTheme"
         className="w-full"
-        onClick={onLogin}
+        onClick={onSignup}
         disabled={loading}
       >
-        {loading ? "Authenticating..." : "Login"}
+        {loading ? "Verifying..." : "Sign Up"}
       </Button>
     </div>
   );
 };
 
-export default SigninForm;
+export default SignupForm;

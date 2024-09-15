@@ -1,7 +1,7 @@
 import SigninForm from "@/components/forms/sign-in-form";
 import Image from "next/image";
 import Link from "next/link";
-import signInImage  from "@/assets/sign-in-image.svg";
+import signInImage from "@/assets/sign-in-image.svg";
 
 export const description =
   "A login page with two columns. The first column has the login form with email and password. There's a Forgot your passwork link and a link to sign up if you do not have an account. The second column has a cover image.";
@@ -21,13 +21,13 @@ function Dashboard() {
 
           <div className="mt-4 text-center text-sm">
             Don&apos;t have an account?{" "}
-            <Link href="#" className="underline">
+            <Link href="/auth/sign-up" className="underline">
               Sign up
             </Link>
           </div>
         </div>
       </div>
-      <div className="hidden bg-sky-100 lg:block h-full">
+      <div className="hidden bg-sky-100 lg:block h-screen">
         <Image
           src={signInImage}
           alt="Image"
