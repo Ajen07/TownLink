@@ -38,7 +38,10 @@ function UpdateProductForm() {
   async function getProductData() {}
 
   useEffect(() => {
-    const fetchData = async () => {};
+    const fetchData = async () => {
+
+      // TODO - Fetch product data by id
+    };
 
     fetchData();
   }, []);
