@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "name": "Soap Bar",
+    "description": "Antibacterial soap bar for daily use",
+    "price": 1.99,
+    "stock": 100,
+    "image": "/images/soap.jpg",
+    "category": "Household Essentials"
+  },
+  {
+    "id": "2",
+    "name": "Washing Powder",
+    "description": "1 kg pack of washing powder",
+    "price": 3.49,
+    "stock": 60,
+    "image": "/images/washingpowder.jpg",
+    "category": "Household Essentials"
+  },
+  {
+    "id": "3",
+    "name": "Lentils",
+    "description": "1 kg pack of high-quality lentils",
+    "price": 2.79,
+    "stock": 80,
+    "image": "/images/lentils.jpg",
+    "category": "Dry Goods and Grains"
+  },
+  {
+    "id": "4",
+    "name": "Rice",
+    "description": "5 kg pack of premium rice",
+    "price": 4.99,
+    "stock": 40,
+    "image": "/images/rice.jpg",
+    "category": "Dry Goods and Grains"
+  },
+  {
+    "id": "5",
+    "name": "Chocolate Bar",
+    "description": "Delicious milk chocolate bar",
+    "price": 1.49,
+    "stock": 150,
+    "image": "/images/chocolate.jpg",
+    "category": "Snacks and Confectioneries"
+  },
+  {
+    "id": "6",
+    "name": "Potato Chips",
+    "description": "100g pack of crispy potato chips",
+    "price": 2.49,
+    "stock": 90,
+    "image": "/images/chips.jpg",
+    "category": "Snacks and Confectioneries"
+  },
+  {
+    "id": "7",
+    "name": "Orange Juice",
+    "description": "1 liter of refreshing orange juice",
+    "price": 2.29,
+    "stock": 70,
+    "image": "/images/orangejuice.jpg",
+    "category": "Beverages"
+  },
+  {
+    "id": "8",
+    "name": "Coffee",
+    "description": "250g pack of premium coffee beans",
+    "price": 5.99,
+    "stock": 50,
+    "image": "/images/coffee.jpg",
+    "category": "Beverages"
+  },
+  {
+    "id": "9",
+    "name": "Frozen Vegetables",
+    "description": "1 kg pack of mixed frozen vegetables",
+    "price": 3.99,
+    "stock": 30,
+    "image": "/images/frozenvegetables.jpg",
+    "category": "Frozen Foods"
+  },
+  {
+    "id": "10",
+    "name": "Ice Cream",
+    "description": "500 ml tub of vanilla ice cream",
+    "price": 4.49,
+    "stock": 25,
+    "image": "/images/icecream.jpg",
+    "category": "Frozen Foods"
+  }
+]

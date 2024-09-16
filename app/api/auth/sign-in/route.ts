@@ -11,7 +11,7 @@ export async function POST(req: NextRequest) {
     const { email, password } = body;
 
     if (!email || !password) {
-      throw new BadRequestError("Email, password, and name are required");
+      throw new BadRequestError("Email and password are required");
     }
 
     const user = await prisma.user.findUnique({
@@ -46,7 +46,7 @@ export async function POST(req: NextRequest) {
     resp.cookies.set("token", token, {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
-      sameSite: "strict",
+      sameSite: "strict", 
     });
 
     return resp;

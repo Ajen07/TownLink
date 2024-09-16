@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
     });
     if (!user) {
       throw new BadRequestError("Invalid verification code");
-    }
+    } 
 
     await prisma.user.update({
       where: {

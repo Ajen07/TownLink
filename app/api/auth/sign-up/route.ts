@@ -11,7 +11,7 @@ export async function POST(req: NextRequest) {
     const { email, password, name } = body;
 
     if (!email || !password || !name) {
-      throw new BadRequestError("Email, password, and name are required");
+      throw new BadRequestError("Name, Email, and password are required");
     }
 
     const salt = await bcryptjs.genSalt(10);
@@ -35,7 +35,7 @@ export async function POST(req: NextRequest) {
       },
     });
 
-    //await sign_up_verification_email(email);
+    await sign_up_verification_email(email);
 
     return NextResponse.json(
       { message: "User created", user },
